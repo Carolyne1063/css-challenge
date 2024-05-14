@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat';
+    display: flex;
+    width: 100%;
+    background-color: whitesmoke;
+    /* justify-content: center;
+    align-items: center;
+    margin-left: 100px; */
+}
+.container{
+    width:100%;
+    margin: 0;
+}
+
+/* .page1{
+    background-image: url(images\hero.png);
+} */
+
+h1{
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+h2{
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+p{
+    font-size: 12px;
+}
+
+/* button{
+    background-color: rgb(64, 146, 212);
+    width: 150px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 200;
+} */
+
+input{
+    margin-bottom: 15px;
+}
+
+.navigation{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.page1{
+    background-image: url(images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height:100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.navBtns{
+    display:flex;
+    gap:20px;
+}
+.login{
+    background-color: transparent;
+    border: none;
+    color:white;
+
+}
+.member{
+    text-align: center;
+    background-color: rgb(64, 146, 212);
+    border:none;
+    border-radius: 5px;
+    padding:10px;
+    width:150px;
+    color:white;
+}
+.contents-page1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+}
+.page2, .page3, .page4, .page5{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.peace-top{
+/* display: grid;
+    grid-template-areas: 
+    ' p se sa'; */
+    display: flex;
+    margin-left: 19%;
+    position: absolute;
+    top: 85%;
+}
+.peace,.set,.satisfy{
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+
+}
+
+.peace{
+    grid-area: p;
+    margin-bottom: 110px;
+    width: 300pxpx;
+    height: 200px;
+    border: 1px solid white;
+}
+
+.set{
+    grid-area: se;
+    width: 300pxpx;
+    height: 200px;
+    border: 1px solid white;
+}
+
+.satisfy{
+    grid-area: sa;
+    width: 300pxpx;
+    height: 200px;
+    border: 1px solid white;
+}
+
+.peace-down{
+    display: grid;
+    grid-template-areas: 
+    ' p2 se2 sa2';
+}
+
+.peace2{
+    grid-area: p2;
+    width: 300pxpx;
+    height: 200px;
+    border: 1px solid white;
+}
+
+.set2{
+    grid-area: se2;
+    width: 300pxpx;
+    height: 200px;
+    border: 1px solid white;
+}
+
+.satisfy2{
+    grid-area: sa2;
+    width: 300pxpx;
+    height: 200px;
+    border: 1px solid white;
+}
+
+.page3{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.industry-info, .pricing-info{
+    margin-left: 400px;
+} 
+
+.people{
+    display: grid;
+    grid-template-areas: 
+    'g1 b g2';
+}
+
+.girl-specs{
+    grid-area: g1;
+}
+
+.boy{
+    grid-area: b;
+}
+
+.girl{
+    grid-area: g2;
+}
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.subscribe{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background: linear-gradient(purple, rgb(198, 9, 107));
+    padding: 0px 20px;
+    
+}
+
+.payment-plans{
+    display: grid;
+    grid-template-areas: 
+    'f s p';
+}
+
+.free{
+    grid-area: f;
+    border: 1px solid blue;
+    background-color: white;
+    width: 250px;
+    height: 450px;
+}
+
+.free h1{
+    margin-top: 20px;
+    margin-left: 20px; 
+}
+
+
+.free p{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.free button{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.standard{
+    grid-area: s;
+    border: 1px solid blue;
+    background-color: rgb(13, 13, 26);
+    color: white;
+    height: 450px;
+}
+
+.standard h1{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.standard p{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.standard button{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.premium{
+    grid-area: p;
+    border: 1px solid blue;
+    background-color: white;
+    height: 450px;
+}
+
+.premium h1{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.premium p{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.premium button{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.page5{
+    background-color: rgb(13, 13, 26);
+    color: white;
+}
+
+.world-content{
+    display: grid;
+    grid-template-areas: 
+    'wi wp';
+}
+
+.world-info{
+    grid-area: wi;
+}
+
+.world-pic{
+    grid-area: wp;
+}
+
+.wrapper{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border: 0.1px solid;
+    border-color: white;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.figma-content{
+    margin-left: 110px;
+}
+
+.company-info p{
+    margin-bottom: 12px;
+}
+
+.legal p{
+    margin-bottom: 12px;
+}
+
+.features p{
+    margin-bottom: 12px;
+}
+
+.resources p{
+    margin-bottom: 12px;
+}
+
+.get-in-touch p{
+    margin-bottom: 12px;
+}
+.figma-content{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.icons{
+    /* display: flex;
+    flex-direction: row;  */
+    margin-left: 200px;
+    justify-content: space-around;
+}
