@@ -16,6 +16,7 @@ body{
 .container{
     width:100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* .page1{
@@ -36,16 +37,7 @@ p{
     font-size: 12px;
 }
 
-/* button{
-    background-color: rgb(64, 146, 212);
-    width: 150px;
-    height: 30px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 200;
-} */
+
 
 input{
     margin-bottom: 15px;
@@ -140,6 +132,11 @@ input{
     margin-left: 19%;
     position: absolute;
     top: 85%;
+    width: 100%;
+}
+
+.peace-top img{
+    stroke: rgb(64, 146, 212);
 }
 .peace,.set,.satisfy{
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
@@ -154,6 +151,29 @@ input{
     border: 1px solid white;
 }
 
+.peace ion-icon{
+    color: rgb(64, 146, 212);
+    width: 80px; 
+    height: 60px; 
+    margin-bottom: 8px; 
+    margin-left: 18px;
+}
+
+.set ion-icon{
+    color: rgb(64, 146, 212);
+    width: 80px; 
+    height: 60px; 
+    margin-bottom: 8px; 
+    margin-left: 18px;
+}
+
+.satisfy ion-icon{
+    color: white;
+    width: 80px; 
+    height: 60px; 
+    margin-bottom: 8px; 
+    margin-left: 18px;
+}
 .set{
     grid-area: se;
     width: 300pxpx;
@@ -193,9 +213,33 @@ input{
 
 .satisfy2{
     grid-area: sa2;
-    width: 300pxpx;
+    width: 300px;
     height: 200px;
    
+}
+
+.peace2 ion-icon{
+    color: rgb(64, 146, 212);
+    width: 80px; 
+    height: 60px; 
+    margin-bottom: 8px; 
+    margin-left: 18px;
+}
+
+.set2 ion-icon{
+    color: rgb(64, 146, 212);
+    width: 80px; 
+    height: 60px; 
+    margin-bottom: 8px; 
+    margin-left: 18px;
+}
+
+.satisfy2 ion-icon{
+    color: rgb(64, 146, 212);
+    width: 80px; 
+    height: 60px; 
+    margin-bottom: 8px; 
+    margin-left: 18px;
 }
 
 .page3{
@@ -261,21 +305,27 @@ input{
     border: none;
 }
 
-.pricing-info{
-    margin-left: 400px;
+.pricing-info, .industry-info{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: center;
+
 }
 .payment-plans{
    display: flex;
    flex-direction: row;
    justify-content: center;
    align-items: center;
+   padding-bottom: 20px;
 }
 
 .free{
     border: 1.5px solid rgb(64, 146, 212);
     background-color: white;
     width: 250px;
-    height: 450px;
+    height: 550px;
 }
 
 .free h1{
@@ -287,6 +337,12 @@ input{
 .free p{
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.free ion-icon{
+    width: 50px;
+    height: 30px;
+    color: green;
 }
 
 .free button{
@@ -305,7 +361,7 @@ input{
     background-color: rgb(13, 13, 26);
     color: white;
     width: 250px;
-    height: 450px;
+    height: 550px;
 }
 
 .standard h1{
@@ -316,6 +372,12 @@ input{
 .standard p{
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.standard ion-icon{
+    width: 50px;
+    height: 30px;
+    color: green;
 }
 
 .standard button{
@@ -332,7 +394,7 @@ input{
     border: 1.5px solid rgb(64, 146, 212);
     background-color: white;
     width: 250px;
-    height: 450px;
+    height: 550px;
 }
 
 .premium h1{
@@ -343,6 +405,12 @@ input{
 .premium p{
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.premium ion-icon{
+    width: 50px;
+    height: 30px;
+    color: green;
 }
 
 .premium button{
@@ -367,6 +435,7 @@ input{
     grid-template-areas: 
     'wi wp';
     padding-top: 100px;
+    width: 100%;
 }
 
 .world-info{
@@ -383,8 +452,8 @@ input{
     flex-direction: row;
     border: 0.1px solid;
     border-color: white;
-    width: 700px;
-    height: 500px;
+    /* width: 700px;
+    height: 500px; */
 }
 
 input{
@@ -399,8 +468,7 @@ input{
 }
 
 .input-box-select input{
-    width: 300px;
-    height: 30px;
+   padding: 1rem 2rem;
 }
 
 select{
@@ -415,6 +483,15 @@ select{
 
 .time label{
     color: black;
+}
+.form-box-login{
+  margin: 0 auto;
+  padding-left: 30px;
+  
+}
+.form-box-login h1{
+    color: black;
+    text-align: center;
 }
 .book-appointment{
     width: 400px;
@@ -476,6 +553,14 @@ select{
 .get-in-touch p{
     margin-bottom: 12px;
 }
+
+.get-in-touch ion-icon{
+color: rgb(64, 146, 212);
+width: 30px;
+height: 20px;
+}
+
+
 .figma-content{
     display: flex;
     flex-direction: row;
@@ -493,10 +578,39 @@ select{
     display: flex;
     flex-direction: row;
 }
-.figma img{
+.figma ion-icon{
     width: 50px;
     height: 20px;
     fill: rgb(64, 146, 212);
 }
+
+@media screen and (max-width:1100px){
+    .page5{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .peace-top{
+        width: 100%;
+    }
+    .page1, .page2, .page5, .page6{
+        width: 100%;
+    }
+    .world-pic, .world-pic, .wrapper{
+        margin-left: 0px;
+    }
+}
+
+
+
+/* @media screen (max-width:430px){
+    body{
+        width: 200px;
+    }
+    
+} */
+
+
 
 
