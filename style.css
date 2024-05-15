@@ -13,6 +13,8 @@ body{
     align-items: center;
     margin-left: 100px; */
 }
+
+
 .container{
     width:100%;
     margin: 0;
@@ -135,22 +137,35 @@ input{
     width: 100%;
 }
 
-.peace-top img{
-    stroke: rgb(64, 146, 212);
-}
-.peace,.set,.satisfy{
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
 
+.peace,.set,.satisfy{
+    box-shadow: 0px 0px 10px 5px rgba(251, 224, 224, 0.5);
+
+}
+.peace:hover {
+    background-color: rgb(64, 146, 212);
 }
 
 .peace{
     grid-area: p;
     margin-bottom: 110px;
-    width: 300pxpx;
+    width: 300px;
     height: 200px;
-    border: 1px solid white;
+    background-color: white; 
+    border: 0.5px solid white; 
+    margin-right: 40px; 
+    width: 250px; 
+    height: 150px; 
+    margin-bottom: 30px;
 }
-
+.peace h1:hover{
+    color: white;
+}
+.peace h1{
+    color: black;
+    margin-bottom: 8px; 
+    margin-left: 18px;
+}
 .peace ion-icon{
     color: rgb(64, 146, 212);
     width: 80px; 
